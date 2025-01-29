@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    font-family: "Raleway", sans-serif;
+    
+}
+button{
+    font-family: "Raleway", sans-serif;
+}
+
+/* Main Header Styling */
+.header-main-div {
+    position: sticky; /* Keeps the header at the top */
+    top: 0;
+    z-index: 10;
+    background-color: #EDFDFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Adjust padding for alignment */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width */
+}
+
+/* Logo Styling */
+.header-logo {
+    width: 160px;
+    height: auto; /* Maintains aspect ratio */
+    cursor: pointer;
+}
+
+/* Navigation and Button Container */
+.header-second-div {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    gap: 25px; /* Space between nav and button */
+}
+
+/* Navigation List Styling */
+.nav-list {
+    display: flex;
+    gap: 25px; /* Space between navigation items */
+    list-style: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Item Styling */
+.nav-item {
+    font-size: 18px;
+    color: #165956;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.nav-item:hover{
+    color: #0a2b2a;
+}
+/* Button Styling */
+.header-button {
+    font-size: 18px;
+    color: white;
+    background-color: #165956;
+    border: none;
+    padding: 15px 30px; /* Adjust padding for better spacing */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+
+}
+
+.header-button:hover {
+    background-color: #0e3c3a; /* Darker shade on hover */
+}
