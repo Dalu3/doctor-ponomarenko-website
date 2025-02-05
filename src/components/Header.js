@@ -3,10 +3,14 @@ import logo from "../images/logo.png";
 
 
 export default function Header (){
+    const scrollToTop = () => {
+        window.scrollTo({ top:0, behavior: "smooth"});
+    };
 return(
 <header className="header-main-div">
     <img
     src={logo}
+    onClick={scrollToTop}
     className="header-logo"
     />
     <div className="header-second-div">
