@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesCard = ({ icon, circleIcon, title, description }) => {
     return (
-        <div className="services-card">
+        <div id="services" className="services-card">
             <div className="services-card-header">
                 <div className="icon-container">
                     <img src={circleIcon} alt="Circle" className="circle-icon" />

@@ -26,7 +26,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="footer">
+        <footer id="footer" className="footer">
             <div className="footer-content">
                     <div class="working-hours">
                         <h2 class="footer-title">Робочі години</h2>

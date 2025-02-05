@@ -6,7 +6,7 @@ import subtract2 from '../images/Subtract2.png'
 
 export default function About() {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-text">
           <h2 className="about-title">Мене звати Анастасія</h2>
@@ -28,7 +28,7 @@ export default function About() {
           <img src={photo} alt="Анастасія" className="about-photo" />
         </div>
       </div>
-    <div className="experience-section">
+    <div id="experience" className="experience-section">
       <div className="experience-container">
         <div className="experience-image">
           <img src={subtract2} alt="Decorative Shape" className="subtract2-image" />

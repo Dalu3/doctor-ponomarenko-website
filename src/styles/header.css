@@ -5,6 +5,17 @@ body {
     font-family: "Raleway", sans-serif;
     
 }
+#experience {
+    scroll-margin-top: 160px;
+}
+
+#services{
+    scroll-margin-top: 230px;
+}
+
+#about{
+    scroll-margin-top: 40px;
+}
 button{
     font-family: "Raleway", sans-serif;
 }
