@@ -5,6 +5,12 @@ import image from  "../images/image-book.jpg"
 import subtract2 from '../images/Subtract2.png'
 
 export default function About() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if(section){
+        section.scrollIntoView({behavior:"smooth"})
+    }
+};
   return (
     <section id="about" className="about-section">
       <div className="about-container">
@@ -19,7 +25,7 @@ export default function About() {
             завершила інтернатуру зі спеціальності “Педіатрія” та пройшла курси
             спеціалізації “Загальної практики сімейної медицини”.
           </p>
-          <button className="about-button">Надіслати повідомлення</button>
+          <button onClick={() => scrollToSection('footer')} className="about-button">Залишити повідомлення</button>
         </div>
         <div className="about-image">
           <img src={subtract} alt="Background Shape" className="subtract-image"

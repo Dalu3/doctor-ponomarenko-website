@@ -56,14 +56,14 @@
     font-size: 40px;
     font-weight: bold;
     color: #165956;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: inline-block;
     padding-left: 33px;
     position: relative;
 }
 
 .experience-list {
-    font-size: 20px;
+    font-size: 25px;
     color: #124846;
     list-style: none;
     padding: 0;
@@ -82,7 +82,7 @@
     color: #165956; /* Match your design color */
     position: absolute;
     left: 0;
-    top: -12%;
+    top: -4%;
 }
 
 
