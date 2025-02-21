@@ -4,7 +4,6 @@ import inst from "../images/instagram.svg";
 import linkedin from "../images/linkedin.svg";
 
 
-
 const Footer = () => {
     const form = useRef();
     
@@ -16,14 +15,21 @@ const Footer = () => {
         message: "",
     });
 
-    // Notification state
+    // Notification state for popup
+    const [showPopup, setShowPopup] = useState(false);
     const [notification, setNotification] = useState("");
-    const [notificationType, setNotificationType] = useState(""); 
 
     // Handle form input changes
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
+    };
+
+    // Function to show the popup message
+    const showPopupMessage = (message) => {
+        setNotification(message);
+        setShowPopup(true);
+        setTimeout(() => setShowPopup(false), 1900); // Hide after 3 seconds
     };
 
     // Function to send email
@@ -36,34 +42,30 @@ const Footer = () => {
             form.current,
             "kHqBl_kyMBasLhFa-"
         )
-        .then(
-            () => {
-                setNotification("Ваше повідомлення успішно надіслано!");
-                setNotificationType("success");
+        .then(() => {
+            showPopupMessage("Ваше повідомлення успішно надіслано!"); // Success message
 
-                // Clear form data
-                setFormData({ first_name: "", last_name: "", user_email: "", message: "" });
-
-                // Reset the actual form fields
-                form.current.reset();
-
-                // Hide the notification after 3 seconds
-                setTimeout(() => setNotification(""), 3000);
-            },
-            (error) => {
-                setNotification("Помилка відправлення. Будь ласка, спробуйте ще раз.");
-                setNotificationType("error");
-
-                // Hide the notification after 3 seconds
-                setTimeout(() => setNotification(""), 3000);
-            }
-        );
+            // Clear form data
+            setFormData({ first_name: "", last_name: "", user_email: "", message: "" });
+            form.current.reset();
+        })
+        .catch(() => {
+            showPopupMessage("Помилка відправлення. Будь ласка, спробуйте ще раз."); // Error message
+        });
+        
     };
-
-
 
     return (
         <footer id="footer" className="footer">
+            {/* Popup Notification */}
+            {showPopup && (
+                <div className="popup-overlay">
+                    <div className="popup">
+                        <p>{notification}</p>
+                    </div>
+                </div>
+            )}
+
             <div className="footer-content">
                 <div className="working-hours">
                     <h2 className="footer-title">Робочі години</h2>
@@ -99,8 +101,6 @@ const Footer = () => {
                                     value={formData.first_name}
                                     onChange={handleChange}
                                     required
-                                    onInvalid={(e) => e.target.setCustomValidity("Будь ласка, введіть ім'я")}
-                                    onInput={(e) => e.target.setCustomValidity("")} 
                                 />
                             </div>
                             <div className="input-wrapper">
@@ -112,8 +112,6 @@ const Footer = () => {
                                     value={formData.last_name}
                                     onChange={handleChange}
                                     required
-                                    onInvalid={(e) => e.target.setCustomValidity("Будь ласка, введіть прізвище")}
-                                    onInput={(e) => e.target.setCustomValidity("")} 
                                 />
                             </div>
                         </div>
@@ -127,8 +125,6 @@ const Footer = () => {
                                 value={formData.user_email}
                                 onChange={handleChange}
                                 required
-                                onInvalid={(e) => e.target.setCustomValidity("Будь ласка, введіть коректну пошту")}
-                                onInput={(e) => e.target.setCustomValidity("")} 
                             />
                         </div>
 
@@ -140,20 +136,11 @@ const Footer = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
-                                onInvalid={(e) => e.target.setCustomValidity("Будь ласка, введіть ваше повідомлення")}
-                                onInput={(e) => e.target.setCustomValidity("")} 
                             ></textarea>
                         </div>
 
                         <button type="submit">Надіслати</button>
                     </form>
-
-                    {notification && (
-                        <p className={`notification ${notificationType} ${notification ? "" : "hidden"}`}>
-                            {notification}
-    </p>
-)}
-
                 </div>
             </div>
         </footer>

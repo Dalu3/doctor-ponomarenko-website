@@ -20,9 +20,8 @@ button{
     font-family: "Raleway", sans-serif;
 }
 
-/* Main Header Styling */
 .header-main-div {
-    position: sticky; /* Keeps the header at the top */
+    position: sticky;
     top: 0;
     z-index: 10;
     background-color: #EDFDFC;
@@ -32,6 +31,9 @@ button{
     padding: 10px 50px; /* Adjust padding for alignment */
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     width: 100%; /* Full width */
+    flex-wrap: wrap;
+    min-height: 80px;
+    
 }
 
 /* Logo Styling */
