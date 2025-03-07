@@ -12,7 +12,7 @@ export default function Main(){
             <div className="main-content">
             <p className="main-subtitle">Надійна та доступна допомога кожному.</p>
             <h1 className="main-title">Пономаренко Анастасія Олександрівна</h1>
-            <p className="main-description">Лікар-педіатр та лікар загальної <br></br> практики сімейної медицини</p>
+            <p className="main-description">Лікар-педіатр та лікар загальної  <span className="responsive-break"><br></br></span> практики сімейної медицини</p>
             <button className="main-button" onClick={() => scrollToSection('footer')} >Зв’язатися зі мною</button>
             </div>
         </main>
