@@ -148,7 +148,7 @@
     right: 0; /* Align the line with the end of the text */
     bottom: -7px; /* Space between text and the line */
     width: 46%; /* Adjust line length */
-    height: 2px; /* Line thickness */
+    height: 3px; /* Line thickness */
     background-color: #165956;
   }
   
@@ -500,15 +500,15 @@
     align-items: center;
     margin-top: 50px;
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
   }
 
   .subtract-image {
     position: absolute;
     z-index: 1; 
     height: auto;
-    width: 270px;
-    max-width: 400px;
+    width: 220px;
+    max-width: 350px;
     transform: translateY(1%); 
     transform: translateX(20%);
 }
@@ -571,14 +571,14 @@
     align-items: center;
     margin-top: 50px;
     width: 100%;
-    max-width: 280px;
+    max-width: 240px;
   }
 
   .subtract-image {
     position: absolute;
     z-index: 1; 
     height: auto;
-    width:230px;
+    width:200px;
     max-width: 350px;
     transform: translateY(1%); 
     transform: translateX(20%);
