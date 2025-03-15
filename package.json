@@ -15,7 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
     
   },
   "eslintConfig": {
@@ -24,7 +24,8 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://yourusername.github.io/your-repository-name",
+"homepage": "https://Dalu3.github.io/doctor-ponomarenko",
+
 
   "browserslist": {
     "production": [
