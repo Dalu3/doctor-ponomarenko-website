@@ -17,7 +17,7 @@ export default function Header() {
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-        setMenuOpen(false); // Close the menu when scrolling to top
+        setMenuOpen(false);
     };
 
     const scrollToSection = (id) => {
@@ -25,23 +25,26 @@ export default function Header() {
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
-        setMenuOpen(false); // Close the menu after clicking a link
+        setMenuOpen(false);
     };
 
     useEffect(() => {
         if (menuOpen) {
             document.addEventListener("mousedown", handleClickOutside);
+            document.addEventListener("touchstart", handleClickOutside); // Support for mobile
         } else {
             document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("touchstart", handleClickOutside);
         }
 
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("touchstart", handleClickOutside);
         };
     }, [menuOpen]);
 
     return (
-        <header className="header-main-div" ref={menuRef}>
+        <header className={`header-main-div ${menuOpen ? "sticky" : ""}`} ref={menuRef}>
             <img
                 src={logo}
                 onClick={scrollToTop}
@@ -50,12 +53,15 @@ export default function Header() {
             />
             <button className="menu-icon" onClick={toggleMenu}>
                 {menuOpen ? (
-                    <span className="close-icon">&times;</span> // Close icon
+                    <span className="close-icon">&times;</span>
                 ) : (
-                    <span className="hamburger-icon">&#9776;</span> // Hamburger icon
+                    <span className="hamburger-icon">&#9776;</span>
                 )}
             </button>
-            {menuOpen && <div className="menu-overlay"></div>} {/* Overlay for dark background */}
+
+            {/* Dark overlay when menu is open */}
+            {menuOpen && <div className="menu-overlay" onClick={() => setMenuOpen(false)}></div>}
+
             <div className={`header-second-div ${menuOpen ? "open" : ""}`}>
                 <ul className="nav-list">
                     <li className="nav-item" onClick={() => scrollToSection('about')}>

@@ -10,15 +10,15 @@ body, html {
 }
 
 #experience {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 50px;
 }
 
 #services {
-    scroll-margin-top: 230px;
+    scroll-margin-top: 200px;
 }
 
 #about {
-    scroll-margin-top: 40px;
+    scroll-margin-top: -10px;
 }
 
 button {
@@ -26,7 +26,7 @@ button {
 }
 
 .header-main-div {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
     background-color: #EDFDFC;
@@ -131,6 +131,12 @@ button {
         display: block; /* Show hamburger menu on small screens */
         padding-right: 50px;
     }
+
+.header-logo {
+    width: 140px;
+    height: auto;
+    cursor: pointer;
+}
 
     .header-second-div {
         display: none; /* Hide the navigation by default on small screens */

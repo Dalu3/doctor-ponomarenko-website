@@ -228,7 +228,7 @@
         }
       
     }
-    @media screen and (min-width: 470px) and (max-width: 890px) {
+    @media screen and (min-width: 650px) and (max-width: 890px) {
         .experience-section {
             padding: 50px 20px;
             display: flex;
@@ -306,6 +306,86 @@
         }
         .experience-item-title {
             font-size: 30px; /* Larger size for the first line */
+        }
+    }
+    @media screen and (min-width: 470px) and (max-width: 650px) {
+        .experience-section {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the content vertically */
+            align-items: center; /* Center the content horizontally */
+        }
+    
+        .experience-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the content vertically */
+            align-items: center; /* Center the content horizontally */
+            gap: 30px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+            font-family: "Raleway", sans-serif;
+            width: 100%; /* Ensure the container takes full width */
+        }
+        .experience-image {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+            text-align: center;
+            order: 2; 
+            padding-left: 30px;
+            margin-top: 50px;
+            width: 100%; /* Ensure the image container takes full width */
+        }
+        .experience-title::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -7px;
+            width: 33%;
+            height: 3px;
+            background-color: #165956;
+        }
+        .subtract2-image {
+            height: auto;
+            width: 340px;
+            max-width: 450px;
+            transform: translateY(30px); 
+            transform: translateX(-32.5%); 
+        }
+        .experience-list {
+            font-size: 25px;
+            color: #124846;
+            list-style: none;
+            padding: 0;
+        }
+    
+        .experience-photo {
+            position: relative;
+            z-index: 2; 
+            width: 100%;
+            max-width: 390px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-51px); 
+            transform: translateX(-10%); 
+        }
+    
+        .experience-text {
+            padding-left: 25px; 
+            padding-right: 20PX;
+        }
+        .experience-title {
+            font-size: 35px;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .experience-item-title {
+            font-size: 25px; /* Larger size for the first line */
         }
     }
     @media screen and (min-width: 365px) and (max-width: 470px) {
