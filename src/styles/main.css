@@ -7,7 +7,8 @@
     min-height: 100vh;
     padding: 160px 0px 0px 150px;
     position: relative;
-        max-width: 100%
+    max-width: 100%;
+    padding-top: 250px
 }
 .main-content{
     color: #EDFDFC; 
@@ -15,7 +16,7 @@
     padding-bottom: 300px;
 }
 .main-title {
-    font-size: 4rem; /* Scales with viewport */
+    font-size: 4rem; 
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
@@ -90,26 +91,26 @@
         display: none;
     }
     .main-title {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         font-weight: 700;
         margin: 0;
         line-height: 1.2;
     }
     
     .main-subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
         margin-bottom: 10px;
     }
     
     .main-description {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 400;
         margin: 20px 0;
     }
     
     .main-button {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: white;
         background-color: #124847;
         border: none;
@@ -148,26 +149,26 @@
         padding-left: 0;
         }
         .main-title {
-            font-size: 2.3rem;
+            font-size: 1.8rem;
             font-weight: 700;
             margin: 0;
             line-height: 1.2;
         }
         
         .main-subtitle {
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 400;
             margin-bottom: 20px;
         }
         
         .main-description {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             margin: 20px 0;
         }
         
         .main-button {
-            font-size: 1rem;
+            font-size: 0.8rem;
             color: white;
             background-color: #124847;
             border: none;
@@ -206,26 +207,26 @@
         }
 
         .main-title {
-            font-size: 2.3rem;
+            font-size: 1.8rem;
             font-weight: 700;
             margin: 0;
             line-height: 1.2;
         }
         
         .main-subtitle {
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 400;
             margin-bottom: 20px;
         }
         
         .main-description {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
             margin: 20px 0;
         }
         
         .main-button {
-            font-size: 1rem;
+            font-size: 0.8rem;
             color: white;
             background-color: #124847;
             border: none;
@@ -263,26 +264,26 @@
             padding-left: 0;
         }
         .main-title {
-            font-size: 2.3rem;
+            font-size: 2rem;
             font-weight: 700;
             margin: 0;
             line-height: 1.2;
         }
         
         .main-subtitle {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-weight: 400;
             margin-bottom: 20px;
         }
         
         .main-description {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 400;
             margin: 20px 0;
         }
         
         .main-button {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: white;
             background-color: #124847;
             border: none;
@@ -320,7 +321,7 @@
             padding-left: 0;
         }
         .main-title {
-            font-size: 2.7rem;
+            font-size: 2rem;
             font-weight: 700;
             margin: 0;
             line-height: 1.2;
@@ -333,13 +334,13 @@
         }
         
         .main-description {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 400;
             margin: 20px 0;
         }
         
         .main-button {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: white;
             background-color: #124847;
             border: none;
@@ -390,13 +391,13 @@
         }
         
         .main-description {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 400;
             margin: 20px 0;
         }
         
         .main-button {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: white;
             background-color: #124847;
             border: none;
@@ -417,7 +418,8 @@
             min-height: 100vh;
             padding: 200px 0px 0px 150px;
             position: relative;
-            max-width: 100%
+            max-width: 100%;
+            padding-top: 250px;
         }
         .main-content{
             color: #EDFDFC; 
