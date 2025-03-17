@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/doctor-ponomarenko-website/static/css/main.9e7dc57a.css",
+    "main.js": "/doctor-ponomarenko-website/static/js/main.8d756b73.js",
+    "static/media/background.png": "/doctor-ponomarenko-website/static/media/background.386fceb3f6bde5ce08a5.png",
+    "static/media/lines.png": "/doctor-ponomarenko-website/static/media/lines.ccd2b52897336f47028a.png",
+    "static/media/image-book.jpg": "/doctor-ponomarenko-website/static/media/image-book.3cee2afa836ae34f869a.jpg",
+    "static/media/photo.jpg": "/doctor-ponomarenko-website/static/media/photo.1ab6d1b6c60aea8b12ef.jpg",
+    "static/media/logo.png": "/doctor-ponomarenko-website/static/media/logo.1451d70db2ad7ecdc227.png",
+    "static/media/linkedin.svg": "/doctor-ponomarenko-website/static/media/linkedin.56026bbcac9852361b7803d6cf5934a8.svg",
+    "static/media/instagram.svg": "/doctor-ponomarenko-website/static/media/instagram.9b9f2a32a922b7990c3614328d5f2180.svg",
+    "index.html": "/doctor-ponomarenko-website/index.html",
+    "main.9e7dc57a.css.map": "/doctor-ponomarenko-website/static/css/main.9e7dc57a.css.map",
+    "main.8d756b73.js.map": "/doctor-ponomarenko-website/static/js/main.8d756b73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e7dc57a.css",
+    "static/js/main.8d756b73.js"
+  ]
+}
